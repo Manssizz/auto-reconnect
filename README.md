@@ -11,6 +11,8 @@ Script untuk auto reconnect modem rakitan yang telah dicompile dengan bahasa go 
 - Setelah interface direstart, script akan melakukan jeda pengecekan 5 menit untuk menghindari looping atau pengulangan jika koneksi sedang tidak stabil
 
 ## Pemasangan
+Pemasangan dan pencopotan script dilakukan melalui terminal.
+
 ### Direct Koneksi (tanpa clash)
 ```
 wget -o /usr/sbin/reconnect https://github.com/Manssizz/auto-reconnect/raw/refs/heads/main/reconnect
@@ -27,7 +29,7 @@ sed -i '/exit 0/i /usr/sbin/reconnect &' /etc/openclash/custom/openclash_custom_
 ```
 _Note: Restart clash setelah pemasangan script._
 
-## Menghapus script.
+## Menghapus script
 Jika script tidak berfungsi sesuai yang diharapkan, bisa dihapus dengan mengikuti command berikut pada terminal.
 ### Direct Koneksi (tanpa clash)
 ```
